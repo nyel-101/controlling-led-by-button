@@ -1,0 +1,24 @@
+// C++ code
+//
+int Button=4;//
+int LED=7;
+int ButtonState;
+void setup()
+{
+ pinMode(Button,INPUT);
+ pinMode (LED, OUTPUT);
+}
+
+void loop()
+{
+  ButtonState=digitalRead(Button);
+  if(ButtonState==LOW){
+    digitalWrite(LED,HIGH);
+  }
+  else{
+    digitalWrite(LED,LOW);
+  }
+  delay(100);
+  
+  
+}
